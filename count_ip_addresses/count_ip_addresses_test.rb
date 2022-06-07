@@ -15,4 +15,7 @@ class CountIpAddressesTest < Minitest::Test
   def test_with_20_addresses
     assert_equal (20), count_ip_addresses("192.1.168.10", "192.1.168.30")
   end
+  def test_with_1_address
+    assert_equal (1), count_ip_addresses("192.1.168.10", "192.1.168.11")
+  end
 end
